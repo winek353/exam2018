@@ -10,18 +10,9 @@ import java.util.List;
 public class AuthorService {
     private List<Author> authors = new ArrayList<>();
     static int idHolder= 1;
-//    private Author[] authors = new Author[0];
 
     public Author[] getAuthors(){
-//        return authors;
-//        if(authors.isEmpty())
-//            return new Author[0];
-//        else{
-////            System.out.println("tutaj "+ (Author[]) authors.toArray());
-////            return (Author[]) authors.toArray();
             return authors.toArray(new Author[0]);
-//        }
-
     }
 
     public Author getAuthor(int id){
@@ -42,4 +33,8 @@ public class AuthorService {
     public boolean deleteAuthor(Author author){
         return authors.remove(author);
     }
+
+//    public boolean isIdcorrect(int id){
+//
+//    }
 }
